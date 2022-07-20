@@ -1,1 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:wght@500;700;900&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  
+   
+}
+.background{
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+   
+   
+}
 
+p{
+    font-size:16px;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+}
+.first-box{
+    background:url(./img/pattern-background-desktop.svg)
+    no-repeat center/cover;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+}
+.doga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+   background-color: var(--very-pale-blue);
+   
+   width:350px;
+   margin-top: 15%;
+   margin-bottom: 15%;
+   
+   padding-bottom: 20px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+
+   
+   
+}
+.card p.suff{
+    padding:0 30px;
+    
+}
+
+.card img.hero{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.card .annual{
+    margin:30px auto;
+    background-color: whitesmoke;
+    width:70%;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card .annual article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card .annual article img{
+    margin-right:20px;
+}
+.card h1{
+   color:navy; 
+   margin:10px 0;
+}
+button{
+    font-family: "Red Hat Display", sans-serif; 
+}
+
+
+.card .button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h4{
+    color:navy; 
+}
+.btn{
+    border:none;
+    padding:5px 10px;
+    border-radius: 10px;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-change{
+    background-color: transparent;
+    color: blue;
+    text-decoration: underline;
+}
+.btn-primary{
+    background-color:  var(--bright-blue);
+    color:white;
+    padding:10px;
+    margin-bottom: 20px;
+
+}
+.btn-primary:hover, 
+.btn-change:hover{
+    opacity: 0.8;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+.btn-secondary:hover {
+    color: hsl(223, 47%, 23%);
+
+}
+
+
+
+@media only screen and (max-width:600px){
+    .first-box{
+        background: url(./img/pattern-background-mobile.svg)
+         no-repeat center;
+         height:50vh;
+
+    }
+    .card{
+        width:300px;
+    }
+} 
